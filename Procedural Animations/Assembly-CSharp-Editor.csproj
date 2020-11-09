@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\AnimationGeneratorEditor.cs" />
+    <Compile Include="Assets\Unity\Info\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -259,8 +260,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>Z:/Procedural Animations/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -617,37 +621,55 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>Z:/Procedural Animations/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Z:/Procedural-Generation/Procedural Animations/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
