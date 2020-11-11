@@ -23,10 +23,11 @@ public class AnimationGenerator : MonoBehaviour
     [SerializeField] Vector3 v3RightStabCentre;
 
     [SerializeField] Vector3[] stabLocations;
+    [SerializeField] Vector3[] stabAnimationLocations;
     [SerializeField] GameObject goStabMarkerPrefab;
     [SerializeField] float fStabMultiplier;
     
-    int iIndex;
+    [SerializeField] int iIndex;
     Vector3 currentAttack;
     float fStep;
     bool bAnimate;
@@ -64,12 +65,11 @@ public class AnimationGenerator : MonoBehaviour
             currentAttack = stabLocations[iIndex];
             fStep += Time.deltaTime * fAttackSpeed;
             goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, currentAttack, fStep);
-            //goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, goRightStabStart.transform.position, fStep);
             if (goRightSword.transform.position == currentAttack)
             {
                 iIndex++;
             }
-            if (iIndex > iNumOfAttacks - 1)
+            if (iIndex > stabLocations.Length - 1)
             {
                 bAnimate = false;
             }
@@ -107,12 +107,21 @@ public class AnimationGenerator : MonoBehaviour
                     case ATTACK_TYPE.THRUST:
                         //put character in thrusting stance (somehow)
                         //set a number of random positions in front of the character (spread affected by skill)
-                        stabLocations = new Vector3[iNumOfAttacks];
-                        for (int i = 0; i < iNumOfAttacks; i++)
+                        stabLocations = new Vector3[iNumOfAttacks * 2 + 1];
+                        for (int i = 0; i < iNumOfAttacks * 2 + 1; i++)
                         {
-                            Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
-                            stabLocations[i] = v3RightStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
-                            GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
+                            //if i is even, set the stab location to the starting position
+                            //else, set to random location
+                            if (i % 2 == 0)
+                            {
+                                stabLocations[i] = goRightStabStart.transform.position;
+                            }
+                            else
+                            {
+                                Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
+                                stabLocations[i] = v3RightStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
+                                GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
+                            }
                         }
                         goRightSword.transform.position = goRightStabStart.transform.position;
                         goRightSword.transform.rotation = goRightStabStart.transform.rotation;
