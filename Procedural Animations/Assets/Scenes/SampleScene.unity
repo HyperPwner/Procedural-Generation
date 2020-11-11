@@ -1137,11 +1137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fe487a146895f4da46dd1c09d9d3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fAttackSpeed: 10
+  fAttackSpeed: 0.5
   fAttackSkill: 1
   fAttackWeight: 0
   fAttackDirection: 0
-  iNumOfAttacks: 10
+  iNumOfAttacks: 30
   bTwoHanded: 0
   goLeftSword: {fileID: 0}
   goRightSword: {fileID: 1523279799}
@@ -1150,9 +1150,11 @@ MonoBehaviour:
   goRightStabStart: {fileID: 721012773}
   v3RightStabCentre: {x: 0.27, y: 1.435656, z: 0.5}
   stabLocations: []
+  stabAnimationLocations: []
   goStabMarkerPrefab: {fileID: 3220631053477207259, guid: bcd8109ff195feb49bc3ed976f1b754e,
     type: 3}
   fStabMultiplier: 0.1
+  iIndex: 0
   eSwordArm: 0
   eAttackType: 0
 --- !u!4 &1322764199
@@ -1321,7 +1323,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 639680937}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.003, y: 0, z: 0}
 --- !u!4 &1563166606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3153535790306996272, guid: bdb30e49bbc3e964a80ca268b5b5852e,
