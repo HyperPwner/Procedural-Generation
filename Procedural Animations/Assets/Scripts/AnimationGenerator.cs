@@ -16,14 +16,13 @@ public class AnimationGenerator : MonoBehaviour
     [SerializeField] GameObject goLeftSword;
     [SerializeField] GameObject goRightSword;
 
-    [SerializeField] Vector3 v3LeftStabStart;
+    [SerializeField] GameObject goLeftStabStart;
     [SerializeField] Vector3 v3LeftStabCentre;
 
     [SerializeField] GameObject goRightStabStart;
     [SerializeField] Vector3 v3RightStabCentre;
 
     [SerializeField] Vector3[] stabLocations;
-    [SerializeField] Vector3[] stabAnimationLocations;
     [SerializeField] GameObject goStabMarkerPrefab;
     [SerializeField] float fStabMultiplier;
     
@@ -63,7 +62,7 @@ public class AnimationGenerator : MonoBehaviour
         if (bAnimate)
         {
             currentAttack = stabLocations[iIndex];
-            fStep += Time.deltaTime * fAttackSpeed;
+            fStep = Time.deltaTime * fAttackSpeed;
             goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, currentAttack, fStep);
             if (goRightSword.transform.position == currentAttack)
             {
@@ -90,6 +89,26 @@ public class AnimationGenerator : MonoBehaviour
                     case ATTACK_TYPE.THRUST:
                         //put character in thrusting stance (somehow)
                         //set a number of random positions in front of the character (spread affected by skill)
+                        stabLocations = new Vector3[iNumOfAttacks * 2 + 1];
+                        for (int i = 0; i < iNumOfAttacks * 2 + 1; i++)
+                        {
+                            //if i is even, set the stab location to the starting position
+                            //else, set to random location
+                            if (i % 2 == 0)
+                            {
+                                stabLocations[i] = goLeftStabStart.transform.position;
+                            }
+                            else
+                            {
+                                Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
+                                stabLocations[i] = v3LeftStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
+                                GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
+                            }
+                        }
+                        goLeftSword.transform.position = goLeftStabStart.transform.position;
+                        goLeftSword.transform.rotation = goLeftStabStart.transform.rotation;
+                        iIndex = 0;
+                        bAnimate = true;
                         break;
                     case ATTACK_TYPE.SLASH:
                         //put character in slashing stance
