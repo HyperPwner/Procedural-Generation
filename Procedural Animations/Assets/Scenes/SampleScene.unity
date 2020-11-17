@@ -1141,7 +1141,7 @@ MonoBehaviour:
   fAttackSkill: 1
   fAttackWeight: 0
   fAttackDirection: 0
-  iNumOfAttacks: 1
+  iNumOfAttacks: 20
   bTwoHanded: 0
   goLeftSword: {fileID: 0}
   goRightSword: {fileID: 1523279799}
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   bRandomDirection: 1
   slashPoints: []
   eSwordArm: 0
-  eAttackType: 1
+  eAttackType: 0
   eAnimState: 0
 --- !u!4 &1322764199
 Transform:

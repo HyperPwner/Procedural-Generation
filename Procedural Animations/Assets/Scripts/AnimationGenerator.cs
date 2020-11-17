@@ -62,8 +62,8 @@ public class AnimationGenerator : MonoBehaviour
     enum ANIMATION_STATE
     {
         NONE,
-        ATTACK,
         WINDUP,
+        ATTACK,
         RETURN
     }
 
@@ -89,6 +89,29 @@ public class AnimationGenerator : MonoBehaviour
                     case SWORD_ARM.LEFT:
                         break;
                     case SWORD_ARM.RIGHT:
+                        switch (eAttackType)
+                        {
+                            case ATTACK_TYPE.THRUST:
+                                fStep = Time.deltaTime * fAttackSpeed;
+                                goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, goRightStabStart.transform.position, fStep);
+                                if (goRightSword.transform.position == goRightStabStart.transform.position)
+                                {
+                                    iIndex++;
+                                    if (iIndex > stabLocations.Length - 1)
+                                    {
+                                        eAnimState = ANIMATION_STATE.RETURN;
+                                    }
+                                    else
+                                    {
+                                        eAnimState = ANIMATION_STATE.ATTACK;
+                                    }
+                                }
+                                break;
+                            case ATTACK_TYPE.SLASH:
+                                break;
+                            default:
+                                break;
+                        }
                         break;
                     default:
                         break;
@@ -141,12 +164,9 @@ public class AnimationGenerator : MonoBehaviour
                                 goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, currentAttack, fStep);
                                 if (goRightSword.transform.position == currentAttack)
                                 {
-                                    iIndex++;
+                                    eAnimState = ANIMATION_STATE.WINDUP;
                                 }
-                                if (iIndex > stabLocations.Length - 1)
-                                {
-                                    eAnimState = ANIMATION_STATE.RETURN;
-                                }
+                                
                                 break;
                             default:
                                 break;
@@ -177,26 +197,7 @@ public class AnimationGenerator : MonoBehaviour
                     case ATTACK_TYPE.THRUST:
                         //put character in thrusting stance (somehow)
                         //set a number of random positions in front of the character (spread affected by skill)
-                        stabLocations = new Vector3[iNumOfAttacks * 2 + 1];
-                        for (int i = 0; i < iNumOfAttacks * 2 + 1; i++)
-                        {
-                            //if i is even, set the stab location to the starting position
-                            //else, set to random location
-                            if (i % 2 == 0)
-                            {
-                                stabLocations[i] = goLeftStabStart.transform.position;
-                            }
-                            else
-                            {
-                                Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
-                                stabLocations[i] = v3LeftStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
-                                GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
-                            }
-                        }
-                        goLeftSword.transform.position = goLeftStabStart.transform.position;
-                        goLeftSword.transform.rotation = goLeftStabStart.transform.rotation;
-                        iIndex = 0;
-                        eAnimState = ANIMATION_STATE.WINDUP;
+                        
                         break;
                     case ATTACK_TYPE.SLASH:
                         //put character in slashing stance
@@ -214,21 +215,14 @@ public class AnimationGenerator : MonoBehaviour
                         Vector3 stabCentre = goCharacter.transform.position + 
                             new Vector3(0.27f * goCharacter.transform.right.x, 1.435656f * goCharacter.transform.up.y, 0.5f * goCharacter.transform.forward.z) + 
                             (fStabDistance * goCharacter.transform.forward);
-                        stabLocations = new Vector3[iNumOfAttacks * 2 + 1];
-                        for (int i = 0; i < iNumOfAttacks * 2 + 1; i++)
+                        stabLocations = new Vector3[iNumOfAttacks];
+                        for (int i = 0; i < iNumOfAttacks; i++)
                         {
                             //if i is even, set the stab location to the starting position
                             //else, set to random location
-                            if (i % 2 == 0)
-                            {
-                                stabLocations[i] = goRightStabStart.transform.position;
-                            }
-                            else
-                            {
-                                Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
-                                stabLocations[i] = v3RightStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
-                                GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
-                            }
+                            Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
+                            stabLocations[i] = v3RightStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
+                            GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
                         }
                         iIndex = 0;
                         eAnimState = ANIMATION_STATE.WINDUP;
