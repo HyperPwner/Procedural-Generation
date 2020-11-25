@@ -490,8 +490,8 @@ Transform:
   m_LocalPosition: {x: 0.27, y: 1.435656, z: -0.06171396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1849831858}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0.001, y: -0.003, z: -78.716}
 --- !u!4 &724602037 stripped
 Transform:
@@ -1155,6 +1155,9 @@ MonoBehaviour:
   fStabMultiplier: 0.1
   iIndex: 0
   goCharacter: {fileID: 1338501907}
+  goChest: {fileID: 2043181570}
+  fStabRotation: 0
+  fRotateSpeed: 20
   slashLocations: []
   fSlashDistance: 0.5
   fStabDistance: 0.5
@@ -1506,6 +1509,7 @@ Transform:
   - {fileID: 1168903201}
   - {fileID: 1320505226}
   - {fileID: 1267427694}
+  - {fileID: 721012774}
   m_Father: {fileID: 1338501911}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

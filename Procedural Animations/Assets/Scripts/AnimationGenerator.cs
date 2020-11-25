@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TO DO:
+//SLASHING
+//FIX ROTATIONS (Stabbing needs to stay in the same direction, but the hand keeps going the wrong way if the character rotates
+//               Also, for slashing, the character's chest should rotate with the slashing movement)
+//SET UP COLLIDERS AND PHYSICS
 
 public class AnimationGenerator : MonoBehaviour
 {
@@ -32,7 +37,10 @@ public class AnimationGenerator : MonoBehaviour
     float fStep;
 
     [SerializeField] GameObject goCharacter;
-
+    [SerializeField] GameObject goChest;
+    [SerializeField] float fStabRotation; //rotation to move the chest to for stabs
+    float fStabRotationCheck; //convert fStabRotation to a positive number because for some reason unity doesn't want to accept that -85 degrees = 275 degrees on a circle
+    [SerializeField] float fRotateSpeed;
 
     [SerializeField] Vector3[] slashLocations;
     [SerializeField] float fSlashDistance = 0.5f;
@@ -44,7 +52,7 @@ public class AnimationGenerator : MonoBehaviour
     [SerializeField] bool bRandomDirection;
     [SerializeField] GameObject[] slashPoints;
 
-    enum SWORD_ARM //What arm will the sword(s) be in?
+    enum SWORD_ARM //What arm will the sword be in?
     {
         RIGHT,
         LEFT
@@ -93,17 +101,24 @@ public class AnimationGenerator : MonoBehaviour
                         {
                             case ATTACK_TYPE.THRUST:
                                 fStep = Time.deltaTime * fAttackSpeed;
-                                goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, goRightStabStart.transform.position, fStep);
-                                if (goRightSword.transform.position == goRightStabStart.transform.position)
+                                if (goChest.transform.rotation.eulerAngles.y != fStabRotationCheck)
                                 {
-                                    iIndex++;
-                                    if (iIndex > stabLocations.Length - 1)
+                                    goChest.transform.rotation = Quaternion.RotateTowards(goChest.transform.rotation, Quaternion.Euler(0, fStabRotation, 0), Time.deltaTime * fRotateSpeed);
+                                }
+                                else
+                                {
+                                    goRightSword.transform.position = Vector3.Lerp(goRightSword.transform.position, goRightStabStart.transform.position, fStep);
+                                    if (goRightSword.transform.position == goRightStabStart.transform.position)
                                     {
-                                        eAnimState = ANIMATION_STATE.RETURN;
-                                    }
-                                    else
-                                    {
-                                        eAnimState = ANIMATION_STATE.ATTACK;
+                                        iIndex++;
+                                        if (iIndex > stabLocations.Length - 1)
+                                        {
+                                            eAnimState = ANIMATION_STATE.RETURN;
+                                        }
+                                        else
+                                        {
+                                            eAnimState = ANIMATION_STATE.ATTACK;
+                                        }
                                     }
                                 }
                                 break;
@@ -148,11 +163,11 @@ public class AnimationGenerator : MonoBehaviour
                             case ATTACK_TYPE.SLASH:
                                 //set current slash to next one
 
-                                //move arm to starting position of the slash
+                                //move arm and chest to starting position of the slash
 
                                 //once the arm gets to starting position
                                 //for each position of the slash
-                                //lerp arm through points
+                                //lerp arm through points, rotating chest to move with arm
 
                                 //after all positions, iterate
 
@@ -213,15 +228,25 @@ public class AnimationGenerator : MonoBehaviour
                     case ATTACK_TYPE.THRUST:
                         //set a number of random positions in front of the character (spread affected by skill)
                         Vector3 stabCentre = goCharacter.transform.position + 
-                            new Vector3(0.27f * goCharacter.transform.right.x, 1.435656f * goCharacter.transform.up.y, 0.5f * goCharacter.transform.forward.z) + 
+                            new Vector3(0, 1.435656f * goCharacter.transform.up.y, 0) + 
                             (fStabDistance * goCharacter.transform.forward);
+                        //goRightStabStart.transform.Rotate(Vector3.up, fStabRotation);
+                        if (Mathf.Sign(fStabRotation) == -1)
+                        {
+                            fStabRotationCheck = 360 + fStabRotation;
+                        }
+                        else
+                        {
+                            fStabRotationCheck = fStabRotation;
+                        }
+
                         stabLocations = new Vector3[iNumOfAttacks];
                         for (int i = 0; i < iNumOfAttacks; i++)
                         {
                             //if i is even, set the stab location to the starting position
                             //else, set to random location
                             Vector2 randomPos = Random.insideUnitCircle * (1 / fAttackSkill) * fStabMultiplier;
-                            stabLocations[i] = v3RightStabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
+                            stabLocations[i] = stabCentre + (new Vector3(randomPos.x, randomPos.y, 0)); //find way to work in any rotation
                             GameObject.Instantiate(goStabMarkerPrefab, stabLocations[i], Quaternion.identity);
                         }
                         iIndex = 0;
