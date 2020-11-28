@@ -204,7 +204,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &367648782
+--- !u!1001 &688959408
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -219,12 +219,12 @@ PrefabInstance:
     - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.446
       objectReference: {fileID: 0}
     - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.633
       objectReference: {fileID: 0}
     - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
         type: 3}
@@ -249,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
         type: 3}
@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 3220631053477207259, guid: bcd8109ff195feb49bc3ed976f1b754e,
         type: 3}
       propertyPath: m_Name
-      value: LookMarker
+      value: LeftArmMarker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcd8109ff195feb49bc3ed976f1b754e, type: 3}
@@ -365,6 +365,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1190055448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220631053477207259, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_Name
+      value: LookDirectionMarker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bcd8109ff195feb49bc3ed976f1b754e, type: 3}
 --- !u!1001 &1306185323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,6 +494,31 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bdb30e49bbc3e964a80ca268b5b5852e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bdb30e49bbc3e964a80ca268b5b5852e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bdb30e49bbc3e964a80ca268b5b5852e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bdb30e49bbc3e964a80ca268b5b5852e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bdb30e49bbc3e964a80ca268b5b5852e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bdb30e49bbc3e964a80ca268b5b5852e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bdb30e49bbc3e964a80ca268b5b5852e,
@@ -545,27 +639,27 @@ PrefabInstance:
     - target: {fileID: 7078722787440015773, guid: bdb30e49bbc3e964a80ca268b5b5852e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.046236146
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bdb30e49bbc3e964a80ca268b5b5852e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000020668665
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bdb30e49bbc3e964a80ca268b5b5852e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000044655458
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bdb30e49bbc3e964a80ca268b5b5852e,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9989306
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bdb30e49bbc3e964a80ca268b5b5852e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdb30e49bbc3e964a80ca268b5b5852e, type: 3}
@@ -692,32 +786,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1ff25e441a3fd64fa8226afc5bc117d, type: 3}
+  m_Script: {fileID: 11500000, guid: 278b3318200389c4a930f53aa180a5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseJoint: {fileID: 1306185365}
-  Joints:
-  - {fileID: 1306185347}
-  - {fileID: 1306185346}
-  - {fileID: 1306185345}
-  - {fileID: 1306185344}
-  Solution:
-  - 0
-  - 0
-  - 0
-  - 0
-  Effector: {fileID: 1306185362}
+  baseJoint: {fileID: 0}
+  Joints: []
+  fSolution: []
+  Effector: {fileID: 0}
   Destination: {fileID: 0}
-  DistanceFromDestination: 0
-  DeltaGradient: 0.1
-  LearningRate: 0.1
-  StopThreshold: 0.1
-  SlowdownThreshold: 0.25
-  IsTentacle: 0
-  OrientationWeight: 0.5
-  TorsionWeight: 0.5
-  TorsionPenality: {x: 1, y: 0, z: 0}
-  DebugDraw: 1
+  fDistanceFromDestination: 0
+  fDeltaGradient: 0.1
+  fLearningRate: 0.1
+  fStopThreshold: 0.1
+  fSlowdownThreshold: 0.25
+  bIsTentacle: 0
+  fOrientationWeight: 0.5
+  fTorsionWeight: 0.5
+  v3TorsionPenalty: {x: 1, y: 0, z: 0}
+  bDebugDraw: 1
 --- !u!114 &1306185344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,16 +813,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -60
-  MaxAngle: 60
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,16 +832,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -140
-  MaxAngle: 10
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,16 +851,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -75
-  MaxAngle: 50
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,16 +870,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -90
-  MaxAngle: 90
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,16 +889,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -80
-  MaxAngle: 80
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,16 +908,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -60
-  MaxAngle: 60
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,16 +927,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -140
-  MaxAngle: 10
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,16 +946,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 1}
-  MinAngle: -75
-  MaxAngle: 50
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,16 +965,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -90
-  MaxAngle: 90
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,16 +984,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -85
-  MaxAngle: 85
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,16 +1003,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -85
-  MaxAngle: 85
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,16 +1022,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 1, z: 0}
-  MinAngle: -85
-  MaxAngle: 85
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 80
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,16 +1041,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 0}
-  MinAngle: 0
-  MaxAngle: 0
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 1
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,16 +1060,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 0}
-  MinAngle: 0
-  MaxAngle: 0
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 1
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,16 +1079,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 0}
-  MinAngle: 0
-  MaxAngle: 0
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 1
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,16 +1098,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 0}
-  MinAngle: 0
-  MaxAngle: 0
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 1
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,16 +1117,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 0}
-  MinAngle: 0
-  MaxAngle: 0
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 1
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
 --- !u!114 &1306185361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,25 +1136,82 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306185342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a363db80e0f976742bc7385f7e24977c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85cda85b5cb0b124d9cda12b2701d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: {x: 0, y: 0, z: 0}
-  MinAngle: 0
-  MaxAngle: 0
-  StartOffset: {x: 0, y: 0, z: 0}
-  ZeroEuler: {x: 0, y: 0, z: 0}
-  SlowdownThreshold: 0.5
-  Speed: 1
---- !u!4 &1306185362 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: bdb30e49bbc3e964a80ca268b5b5852e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1306185323}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1306185365 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7078722787440015773, guid: bdb30e49bbc3e964a80ca268b5b5852e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1306185323}
-  m_PrefabAsset: {fileID: 0}
+  v3Axis: {x: 0, y: 0, z: 0}
+  fMinAngle: 0
+  fMaxAngle: 0
+  v3StartOffset: {x: 0, y: 0, z: 0}
+  v3ZeroEuler: {x: 0, y: 0, z: 0}
+  fSlowdownThreshold: 0.5
+  fSpeed: 80
+--- !u!1001 &1859693869
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.446
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483808774491240738, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220631053477207259, guid: bcd8109ff195feb49bc3ed976f1b754e,
+        type: 3}
+      propertyPath: m_Name
+      value: RightArmMarker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bcd8109ff195feb49bc3ed976f1b754e, type: 3}

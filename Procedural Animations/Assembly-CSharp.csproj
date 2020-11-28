@@ -63,25 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\InverseKinematics.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\RobotJoint.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\SetRobotJointWeights.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\Expose\ExposeMethdoInTheEditor.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ProgressBar\InspectorButtonsTest.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ProgressBar\ProgressBarAttribute.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ProgressBar\TestButtonAttribute.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ReadOnly\ReadOnlyAttribute.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ShowIf\ShowIfAttribute.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\Timer\Fader.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\Timer\Interpolator.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\Timer\Timer.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\Utils.cs" />
     <Compile Include="Assets\Scripts\AnimationGenerator.cs" />
-    <Compile Include="Assets\Scripts\Test\IKManager.cs" />
-    <Compile Include="Assets\Scripts\Test\Joint.cs" />
+    <Compile Include="Assets\Scripts\IKRig.cs" />
+    <Compile Include="Assets\Scripts\Joint.cs" />
     <Compile Include="Assets\Unity\ConstraintSamples\Scripts\mParent.cs" />
     <Compile Include="Assets\Unity\Info\Scripts\Readme.cs" />
-    <None Include="Assets\AlanZucconi\IK\Models\Tentacle\Tentacle.shader" />
     <None Include="Assets\WeaponScene\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

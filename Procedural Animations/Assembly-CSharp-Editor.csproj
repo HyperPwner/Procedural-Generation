@@ -63,11 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\Expose\Editor\MonoBehaviourCustomEditor.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ProgressBar\Editor\ProgressBarDrawer.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ProgressBar\Editor\TestButtonDrawer.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ReadOnly\Editor\ReadOnlyDrawer.cs" />
-    <Compile Include="Assets\AlanZucconi\IK\Scripts\Utils\ShowIf\Editor\ShowIfDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\AnimationGeneratorEditor.cs" />
     <Compile Include="Assets\Unity\Info\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEngine">
