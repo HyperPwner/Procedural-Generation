@@ -64,8 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnimationGenerator.cs" />
-    <Compile Include="Assets\Scripts\IKRig.cs" />
-    <Compile Include="Assets\Scripts\Joint.cs" />
+    <Compile Include="Assets\Scripts\SlashPoint.cs" />
     <Compile Include="Assets\Unity\ConstraintSamples\Scripts\mParent.cs" />
     <Compile Include="Assets\Unity\Info\Scripts\Readme.cs" />
     <None Include="Assets\WeaponScene\Readme.txt" />
