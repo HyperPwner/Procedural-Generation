@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 527039406681052973}
   - component: {fileID: 583123166101230536}
   - component: {fileID: 1426469790611573212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,9 +88,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2483808774491240738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StabMarker
-  m_TagString: Untagged
+  m_TagString: Marker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
