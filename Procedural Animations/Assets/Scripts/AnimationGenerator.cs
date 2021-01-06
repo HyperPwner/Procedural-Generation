@@ -581,7 +581,6 @@ public class AnimationGenerator : MonoBehaviour
             }
 
             //put feet into starting positions (arms are handled in the switch statement)
-            fCentreOfMassDistribution = -0.5f;
             v3RightFootTarget = goRightFootStart.transform.position;
             v3LeftFootTarget = goLeftFootStart.transform.position;
             goRightFoot.transform.position = v3RightFootTarget;
